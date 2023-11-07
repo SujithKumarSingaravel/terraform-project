@@ -17,7 +17,7 @@ stage("set env variabl"){
         }
  stage('Get Directory') {
             steps{
-                println(/var/lib/jenkins/workspace/project-terraform/)
+                println(WORKSPACE)
             }
         }
 stage('Terraform Init') {
