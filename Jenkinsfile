@@ -17,7 +17,7 @@ stage("set env variabl"){
         }
  stage('Get Directory') {
             steps{
-                println(WORKSPACE)
+                println(project-01)
             }
         }
 stage('Terraform Init') {
