@@ -1,4 +1,4 @@
-```groovy
+groovy
 pipeline {
 agent any
 stages {
@@ -28,4 +28,3 @@ sh 'terraform apply tfplan'
 }
 }
 }
-```
