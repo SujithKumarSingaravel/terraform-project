@@ -15,6 +15,11 @@ stage("set env variabl"){
                 sh 'export AWS_PROFILE=037911276564'
             }
         }
+ stage('Get Directory') {
+            steps{
+                println(WORKSPACE)
+            }
+        }
 stage('Terraform Init') {
 steps {
 // Run 'terraform init' to initialize your Terraform configuration
