@@ -10,6 +10,11 @@ steps {
 checkout scm
 }
 }
+stage("set env variabl"){
+            steps{
+                sh 'export AWS_PROFILE=037911276564'
+            }
+        }
 stage('Terraform Init') {
 steps {
 // Run 'terraform init' to initialize your Terraform configuration
