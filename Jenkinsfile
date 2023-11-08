@@ -1,7 +1,7 @@
 pipeline {
 agent any
 tools {
-terraform 'Terraform 0.6.6'
+terraform 'Terraform 1.0.10'
 }
 stages {
 stage('Checkout') {
@@ -13,11 +13,6 @@ checkout scm
 stage("set env variabl"){
             steps{
                 sh 'export AWS_PROFILE=037911276564'
-            }
-        }
- stage('Get Directory') {
-            steps{
-                println(project-01)
             }
         }
 stage('Terraform Init') {
