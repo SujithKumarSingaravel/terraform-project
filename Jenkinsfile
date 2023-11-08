@@ -24,13 +24,13 @@ sh 'terraform init'
 stage('Terraform Plan') {
 steps {
 // Run 'terraform plan' to review the changes
-sh 'terraform plan -out=tfplan'
+sh 'terraform plan'
 }
 }
 stage('Terraform Apply') {
 steps {
 // Apply the changes if approved (you might want to add an approval step here)
-sh 'terraform apply tfplan'
+sh 'terraform apply'
 }
 }
 }
