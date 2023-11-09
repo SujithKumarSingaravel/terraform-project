@@ -1,7 +1,3 @@
-provider "aws" {
-  region     = "us-east-1"
-}
- 
 resource "aws_security_group" "web_access123" {
         name = "web_access123"
         description = "allow ssh and http"
