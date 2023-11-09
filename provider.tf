@@ -38,7 +38,7 @@ resource "aws_instance" "newweb" {
   security_groups = ["${aws_security_group.web_access123.name}"]
   key_name = aws_key_pair.key123.key_name
   tags = {
-    Name  = "hello-World"
+    Name  = "Sujith-World"
     Stage = "testing"
     Location = "INDIA"
   }
