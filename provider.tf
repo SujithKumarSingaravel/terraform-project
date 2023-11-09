@@ -32,7 +32,7 @@ resource "aws_key_pair" "key1234" {
 }
  
 resource "aws_instance" "newweb" {
-  ami           = "ami-05c13eab67c5d8861"
+  ami           = "ami-02e94b011299ef128"
   instance_type = "t2.micro"
   security_groups = ["${aws_security_group.web_access123.name}"]
   key_name = aws_key_pair.key1234.key_name
