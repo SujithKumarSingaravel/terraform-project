@@ -22,6 +22,7 @@ resource "aws_security_group" "web_access123" {
                 protocol = "-1"
                 cidr_blocks = ["0.0.0.0/0"]
         }
+
 }
 resource "aws_key_pair" "key1234" {
   key_name   = "key1234"
