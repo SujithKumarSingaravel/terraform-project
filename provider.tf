@@ -2,8 +2,8 @@ provider "aws" {
   region     = "us-east-1"
 }
  
-resource "aws_security_group" "web_access" {
-        name = "web_access"
+resource "aws_security_group" "web_access123" {
+        name = "web_access123"
         description = "allow ssh and http"
  
         ingress {
@@ -35,7 +35,7 @@ resource "aws_key_pair" "key123" {
 resource "aws_instance" "newweb" {
   ami           = "ami-05c13eab67c5d8861"
   instance_type = "t2.micro"
-  security_groups = ["${aws_security_group.web_access.name}"]
+  security_groups = ["${aws_security_group.web_access123.name}"]
   key_name = aws_key_pair.key123.key_name
   tags = {
     Name  = "hello-World"
