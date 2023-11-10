@@ -42,4 +42,5 @@ resource "aws_instance" "newweb" {
     Stage = "testing"
     Location = "INDIA"
   }
+
 }
